@@ -1,5 +1,13 @@
 {
   "homepage": {
     "welcome": "bem-vindos"
+  },
+  "layout": {
+    "contactUs": "contate-nos",
+    "underConstruction": "O nosso site ainda está em construção, mas estamos a trabalhar para o lançar em breve!\nEnquanto isso, segue-nos nas redes sociais para ficares a par das novidades."
+  },
+  "error": {
+    "somethingWentWrong": "algo correu mal.",
+    "tryAgain": "tenta novamente"
   }
 }

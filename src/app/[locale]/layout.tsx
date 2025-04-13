@@ -1,17 +1,19 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Bellefair, Montserrat } from 'next/font/google';
 
 import '../globals.css';
+import MainLayout from '@/components/layout/main-layout';
 import ProvidersWrapper from '@/lib/providers';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const montserrat = Montserrat({
+  variable: '--font-montserrat',
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const bellefair = Bellefair({
+  variable: '--font-bellefair',
   subsets: ['latin'],
+  weight: ['400'],
 });
 
 export const metadata: Metadata = {
@@ -30,9 +32,11 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${bellefair.variable} antialiased flex flex-col min-h-screen items-center font-montserrat`}
       >
-        <ProvidersWrapper locale={locale}>{children}</ProvidersWrapper>
+        <ProvidersWrapper locale={locale}>
+          <MainLayout>{children}</MainLayout>
+        </ProvidersWrapper>
       </body>
     </html>
   );

@@ -1,5 +1,13 @@
 {
   "homepage": {
     "welcome": "welcome"
+  },
+  "layout": {
+    "contactUs": "contact us",
+    "underConstruction": "Our website is still under construction, but we’re working hard to bring it to life!\nIn the meantime, follow us on social media to stay updated."
+  },
+  "error": {
+    "somethingWentWrong": "something went wrong.",
+    "tryAgain": "try again"
   }
 }
