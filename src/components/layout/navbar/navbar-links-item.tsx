@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import {
   NavigationMenuItem,
   NavigationMenuLink,
@@ -13,12 +11,13 @@ export interface INavbarLinksItem {
 
 export default function NavbarLinksItem({ link }: { link: INavbarLinksItem }) {
   return (
-    <NavigationMenuItem>
-      <Link href={link.href} passHref>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-          {link.text}
-        </NavigationMenuLink>
-      </Link>
+    <NavigationMenuItem asChild>
+      <NavigationMenuLink
+        href={link.href}
+        className={navigationMenuTriggerStyle()}
+      >
+        {link.text}
+      </NavigationMenuLink>
     </NavigationMenuItem>
   );
 }

@@ -17,8 +17,8 @@ const bellefair = Bellefair({
 });
 
 export const metadata: Metadata = {
-  title: 'Next.js Starter Template',
-  description: 'A modern starter template to quickly spin up your app',
+  title: 'GL Nature Cosmetics',
+  description: 'Natural Cosmetics Shop',
 };
 
 export default async function RootLayout({

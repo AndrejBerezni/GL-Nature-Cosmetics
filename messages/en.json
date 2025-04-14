@@ -10,10 +10,22 @@
     "home": "home",
     "shop": "shop",
     "blog": "blog",
-    "about": "about us"
+    "about": "about us",
+    "language": "language",
+    "english": "english",
+    "portuguese": "portuguese"
   },
   "error": {
     "somethingWentWrong": "something went wrong.",
     "tryAgain": "try again"
+  },
+  "user": {
+    "account": "account"
+  },
+  "shop": {
+    "cart": "cart"
+  },
+  "search": {
+    "search": "search"
   }
 }

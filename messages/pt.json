@@ -10,10 +10,22 @@
     "home": "página inicial",
     "shop": "loja",
     "blog": "blog",
-    "about": "sobre nós"
+    "about": "sobre nós",
+    "language": "idioma",
+    "english": "inglês",
+    "portuguese": "português"
   },
   "error": {
     "somethingWentWrong": "algo correu mal.",
     "tryAgain": "tenta novamente"
+  },
+  "user": {
+    "account": "conta"
+  },
+  "shop": {
+    "cart": "cesto"
+  },
+  "search": {
+    "search": "pesquisa"
   }
 }

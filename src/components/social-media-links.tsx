@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -23,7 +24,11 @@ function SocialMediaLink({ link }: { link: ISocialMediaLink }) {
   );
 }
 
-export default function SocialMediaLinks() {
+interface ISocialMediaLinksProps {
+  align?: 'start' | 'center' | 'end';
+}
+
+export default function SocialMediaLinks({ align }: ISocialMediaLinksProps) {
   const links: ISocialMediaLink[] = [
     {
       id: 'facebook-link',
@@ -52,7 +57,13 @@ export default function SocialMediaLinks() {
   ];
 
   return (
-    <ul className="flex gap-2">
+    <ul
+      className={clsx('flex items-center gap-2', {
+        'justify-start': align === 'start' || !align,
+        'justify-center': align === 'center',
+        'justify-end': align === 'end',
+      })}
+    >
       {links.map((link) => (
         <SocialMediaLink key={link.id} link={link} />
       ))}

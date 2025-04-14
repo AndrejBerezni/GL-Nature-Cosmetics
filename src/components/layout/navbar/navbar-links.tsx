@@ -1,17 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from '@/components/ui/navigation-menu';
+import { NavigationMenuList } from '@/components/ui/navigation-menu';
 
-import { INavbarLinksItem } from './navbar-links-item';
+import NavbarLinksItem, { INavbarLinksItem } from './navbar-links-item';
 
 export default function NavbarLinks() {
   const translate = useTranslations('navbar');
@@ -34,5 +25,11 @@ export default function NavbarLinks() {
     },
   ];
 
-  return <NavigationMenuList>{}</NavigationMenuList>;
+  return (
+    <NavigationMenuList>
+      {navbarLinks.map((link) => (
+        <NavbarLinksItem key={`${link.text}-navbar-link`} link={link} />
+      ))}
+    </NavigationMenuList>
+  );
 }
