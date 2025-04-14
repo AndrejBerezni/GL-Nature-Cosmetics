@@ -4,12 +4,12 @@ import { getMessages } from 'next-intl/server';
 
 import { routing } from '@/i18n/routing';
 
-interface NextIntlProps {
+interface INextIntlProps {
   children: React.ReactNode;
   locale: string;
 }
 
-export default async function NextIntl({ children, locale }: NextIntlProps) {
+export default async function NextIntl({ children, locale }: INextIntlProps) {
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }

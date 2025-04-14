@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface SocialMediaLink {
+interface ISocialMediaLink {
   id: string;
   href: string;
   img: string;
   name: string;
 }
 
-function SocialMediaLink({ link }: { link: SocialMediaLink }) {
+function SocialMediaLink({ link }: { link: ISocialMediaLink }) {
   return (
     <li className="hover:scale-105 duration-150 hover:shadow-md">
       <Link href={link.href}>
@@ -24,7 +24,7 @@ function SocialMediaLink({ link }: { link: SocialMediaLink }) {
 }
 
 export default function SocialMediaLinks() {
-  const links: SocialMediaLink[] = [
+  const links: ISocialMediaLink[] = [
     {
       id: 'facebook-link',
       href: 'https://www.facebook.com/profile.php?id=100075662247637',

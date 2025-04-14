@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import SocialMediaLinks from '../social-media-links';
 
-//TO DO: This component should be customizable by CMS
+//TO DO: This component should be customizable by CMS, this is a placeholder for now
 export default function InfoBanner() {
   const translate = useTranslations('layout');
   return (

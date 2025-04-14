@@ -6,6 +6,12 @@
     "contactUs": "contate-nos",
     "underConstruction": "O nosso site ainda está em construção, mas estamos a trabalhar para o lançar em breve!\nEnquanto isso, segue-nos nas redes sociais para ficares a par das novidades."
   },
+  "navbar": {
+    "home": "página inicial",
+    "shop": "loja",
+    "blog": "blog",
+    "about": "sobre nós"
+  },
   "error": {
     "somethingWentWrong": "algo correu mal.",
     "tryAgain": "tenta novamente"
