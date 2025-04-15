@@ -1,10 +1,11 @@
 import { NavigationMenu } from '@/components/ui/navigation-menu';
 import { SearchMobile } from '@/features/search/components/search-mobile';
+import CartNavbarAction from '@/features/shop/components/cart-navbar-action';
 
-import BurgerMenu from './burger-menu';
 import NavbarActions from './navbar-actions';
 import NavbarBrand from './navbar-brand';
 import NavbarLinks from './navbar-links';
+import SideMenu from './side-menu';
 
 export default function Navbar() {
   return (
@@ -17,7 +18,10 @@ export default function Navbar() {
       <div className="min-w-1/5 hidden lg:inline-block">
         <NavbarActions />
       </div>
-      <BurgerMenu />
+      <div className="justify-self-end flex gap-4 items-center lg:hidden">
+        <CartNavbarAction />
+        <SideMenu />
+      </div>
       <SearchMobile />
     </NavigationMenu>
   );

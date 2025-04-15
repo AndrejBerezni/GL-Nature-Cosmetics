@@ -1,12 +1,13 @@
 import { useTranslations } from 'next-intl';
 
 import { NavigationMenuList } from '@/components/ui/navigation-menu';
+import { INavigationLink } from '@/lib/types';
 
-import NavbarLinksItem, { INavbarLinksItem } from './navbar-links-item';
+import NavbarLinksItem from './navbar-links-item';
 
 export default function NavbarLinks() {
-  const translate = useTranslations('navbar');
-  const navbarLinks: INavbarLinksItem[] = [
+  const translate = useTranslations('layout');
+  const navbarLinks: INavigationLink[] = [
     {
       href: '/',
       text: translate('home'),

@@ -3,13 +3,9 @@ import {
   NavigationMenuLink,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import { INavigationLink } from '@/lib/types';
 
-export interface INavbarLinksItem {
-  href: string;
-  text: string;
-}
-
-export default function NavbarLinksItem({ link }: { link: INavbarLinksItem }) {
+export default function NavbarLinksItem({ link }: { link: INavigationLink }) {
   return (
     <NavigationMenuItem asChild>
       <NavigationMenuLink

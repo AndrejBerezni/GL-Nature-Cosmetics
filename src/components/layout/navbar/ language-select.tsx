@@ -36,7 +36,7 @@ function LanguageItem({ language }: { language: ILanguage }) {
 }
 
 export default function LanguageSelect() {
-  const translate = useTranslations('navbar');
+  const translate = useTranslations('layout');
 
   const languages: ILanguage[] = [
     { locale: 'pt', name: translate('portuguese') },
