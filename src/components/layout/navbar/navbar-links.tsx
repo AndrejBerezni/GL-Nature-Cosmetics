@@ -26,7 +26,7 @@ export default function NavbarLinks() {
   ];
 
   return (
-    <NavigationMenuList>
+    <NavigationMenuList className="hidden lg:flex">
       {navbarLinks.map((link) => (
         <NavbarLinksItem key={`${link.text}-navbar-link`} link={link} />
       ))}

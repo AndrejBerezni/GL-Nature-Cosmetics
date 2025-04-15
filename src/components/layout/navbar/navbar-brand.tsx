@@ -8,11 +8,13 @@ export default function NavbarBrand() {
       <Image
         src="/logo/round-initials-green.png"
         alt="GL logo"
-        width={50}
-        height={50}
-        suppressHydrationWarning
+        width={54}
+        height={40}
+        className="sm:w-[54px] sm:h-[40px] w-[46px] h-[35px]"
       />
-      <span className="font-bellefair uppercase text-xl">Nature Cosmetics</span>
+      <span className="font-bellefair uppercase text-base sm:text-xl">
+        Nature Cosmetics
+      </span>
     </Link>
   );
 }

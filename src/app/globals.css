@@ -52,7 +52,7 @@
   --card: oklch(0.965 0 0); /* light gray */
   --card-foreground: oklch(0.22 0.06 120);
 
-  --popover: oklch(0.965 0 0);
+  --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.22 0.06 120);
 
   --primary: oklch(0.34 0.11 160); /* #114232 */

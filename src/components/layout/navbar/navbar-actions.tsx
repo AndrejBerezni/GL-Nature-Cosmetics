@@ -7,7 +7,7 @@ import LanguageSelect from './ language-select';
 
 export default function NavbarActions() {
   return (
-    <NavigationMenuList className="flex gap-4 justify-end">
+    <NavigationMenuList className="hidden lg:flex gap-4 justify-end">
       <SearchNavbarAction />
       <CartNavbarAction />
       <UserNavbarAction />
