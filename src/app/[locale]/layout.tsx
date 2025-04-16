@@ -32,7 +32,7 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${montserrat.variable} ${bellefair.variable} antialiased flex flex-col min-h-screen items-center font-montserrat`}
+        className={`${montserrat.variable} ${bellefair.variable} antialiased bg-muted flex flex-col min-h-screen items-center font-montserrat`}
       >
         <ProvidersWrapper locale={locale}>
           <MainLayout>{children}</MainLayout>

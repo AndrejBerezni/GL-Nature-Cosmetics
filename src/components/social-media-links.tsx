@@ -11,7 +11,7 @@ interface ISocialMediaLink {
 
 function SocialMediaLink({ link }: { link: ISocialMediaLink }) {
   return (
-    <li className="hover:scale-105 duration-150 hover:shadow-md">
+    <li className="hover:scale-105 duration-150 hover:drop-shadow-md">
       <Link href={link.href}>
         <Image
           src={link.img}

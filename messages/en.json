@@ -12,7 +12,15 @@
     "language": "language",
     "english": "english",
     "portuguese": "portuguese",
-    "account": "account"
+    "account": "account",
+    "rightsReserved": "All rights reserved.",
+    "company": "company",
+    "customerServices": "customer services",
+    "faq": "FAQ",
+    "trackOrder": "track your order",
+    "ourInformation": "our information",
+    "privacy": "privacy",
+    "terms": "terms & conditions"
   },
   "error": {
     "somethingWentWrong": "something went wrong.",

@@ -9,7 +9,7 @@ export default function MainLayout({
 }) {
   return (
     <>
-      <header className="w-screen flex flex-col items-center  border-b-2 ">
+      <header className="w-screen flex flex-col items-center border-b-2 bg-background">
         <InfoBanner />
         <Navbar />
       </header>

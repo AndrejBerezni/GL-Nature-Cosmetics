@@ -12,7 +12,15 @@
     "language": "idioma",
     "english": "inglês",
     "portuguese": "português",
-    "account": "conta"
+    "account": "conta",
+    "rightsReserved": "Todos os direitos reservados.",
+    "company": "empresa",
+    "customerServices": "serviço ao cliente",
+    "faq": "perguntas frequentes",
+    "trackOrder": "seguir a sua encomenda",
+    "ourInformation": "a nossa informação",
+    "privacy": "privacidade",
+    "terms": "termos e condições"
   },
   "error": {
     "somethingWentWrong": "algo correu mal.",

@@ -6,3 +6,8 @@ export interface INavigationLink {
 export interface INavigationLinkWithIcon extends INavigationLink {
   icon: React.ReactNode;
 }
+
+export interface IFooterColumn {
+  title: string;
+  links: INavigationLink[];
+}

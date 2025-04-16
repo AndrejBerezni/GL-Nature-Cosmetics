@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <NavigationMenu
       className="lg:flex grid grid-cols-3 items-center justify-between w-full
-     max-w-[1440px] px-4 py-2 gap-2"
+     max-w-[1440px] px-4 py-2 gap-2 bg-background"
     >
       <NavbarBrand />
       <NavbarLinks />
